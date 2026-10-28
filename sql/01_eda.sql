@@ -109,4 +109,4 @@ SELECT
 FROM ansokningar
 WHERE UPPER(utbildningsnamn) LIKE '%AI%';
 
--- This was all questions in uppgift 1 - Grundläggande EDA
+-- End of task 1 - Exploratory Data Analysis (EDA)1 - Grundläggande EDA
