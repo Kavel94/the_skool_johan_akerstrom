@@ -24,7 +24,9 @@ These insights can help The Skool prioritize future applications, allocate resou
 * Git and Github
 
 # 3. Project Structure
-When done, insert tree image: tree -a -I '.git' repositoryname
+The screenshot below shows the project sturcture.
+
+![Project structure](screenshots/tree.png)
 
 # 4. Data import
 The original dataset was provided as an .xls file from myh.se containing results from the 2025 application round.
@@ -33,12 +35,24 @@ The data was prepared and imported into Oracle Database.
 
 The CSV import method was tested initially, but the successful import was completed using the Excel-based workflow due to load format issues.
 
-# 5. Running the SQL scripts
-The SQL scripts were developed and tested using Oracle Database running in a Podman container on Oracle Linux.
+# 5. Running SQL-queries
 
-The dataset was imported into a table named ANSOKNINGAR.
+I'm using a custom Bash script to called orac to execute SQL queries against my Oracle Database.
+The script loads database credentials from a seperate .env file that allows me to run SQL files directly from the Linux terminal without 
+manually logging into the Database each time.
 
-The SQL scripts are located in the sql/ directory and can be executed using an Oracle-compatible SQL client.
+The. env file is excluded from version control using .gitignore to protect sensitive credentials. 
+
+The screenshot below shows how I start the Oracle container using podman, verifying that it is running and then execute my SQL script.
+
+![Starting Oracle Database with Podman and running SQL scripts](screenshots/Podman_01_eda_sql.png)
+
+
+* The SQL scripts were developed and tested using Oracle Database running in a Podman container on Oracle Linux. 
+
+* The dataset was imported into a table named ANSOKNINGAR. 
+
+* The SQL scripts are located in the sql/ directory and can be executed using an Oracle-compatible SQL client.
 
 # 6. Exploratory Data Analysis
 
@@ -61,7 +75,11 @@ The second assignment - Uppgift 2 - Interview with domain expert - was conducted
 Uppgift 3 - 03_analysis.sql script to be executed against the Oracle Database.  
 
 ## Example Result – Applications by Educational Area, Sorted by most applicants.
-Screenshot in here.
+
+The screnshot below shows the result of question 1a, it displays the number of applications sorted by educational area, sorted in descending order. 
+Economics, administration and sales received the most applications (239), followed by Technology and Manufacturing (221) and Data/IT (220).
+
+![Resultat från fråga 1a](screenshots/Exempel_fraga1a.png)
 
 # 9. AI Usage
 LLM has been used in some parts as a tutor and learning aid for SQL explanations, debugging and support.
