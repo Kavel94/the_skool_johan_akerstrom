@@ -7,6 +7,10 @@
 -- Motivering: The Skool vill identifiera områden
 -- där chansen att få en ansökan beviljad är hög.
 
+PROMPT
+PROMPT === Fråga 1: Vilka utbildningsområden har högst andel beviljade ansökningar? ===
+PROMPT
+
 SELECT
     utbildningsomrade,
     COUNT(*) AS antal_ansokningar,
@@ -26,6 +30,10 @@ ORDER BY beviljandegrad_procent DESC;
 -- Motivering: The Skool kan bedriva både distans-
 -- och platsbundna utbildningar. Resultatet kan
 -- hjälpa dem att välja lämplig studieform.
+
+PROMPT
+PROMPT === Fråga 2: Vilken studieform har högst beviljandegrad? ===
+PROMPT
 
 SELECT
     studieform,
@@ -47,6 +55,10 @@ ORDER BY beviljandegrad_procent DESC;
 -- Motivering: The Skool vill hitta mindre
 -- konkurrensutsatta områden med goda möjligheter
 -- att få sina ansökningar beviljade.
+
+PROMPT
+PROMPT === Fråga 3: Vilka utbildningsområden har få ansökningar men samtidigt hög beviljandegrad? ===
+PROMPT
 
 SELECT
     utbildningsomrade,
