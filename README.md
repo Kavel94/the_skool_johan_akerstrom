@@ -81,7 +81,7 @@ Based on insights from the interview, additional SQL queries were developed for 
 
 The screenshot below demonstrates the SQL query used to answer question 1a and 1b  from Assignment 1/Uppgift 1.
 
-![SQL Query Implementation](screenshots/sql_implementation)
+![SQL Query Implementation](screenshots/sql_implementation.png)
 
 # 8. Example Result – Applications by Educational Area
 
