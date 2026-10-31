@@ -76,11 +76,19 @@ Assignment 2 involved interviewing a domain expert to identify relevant business
 
 Based on insights from the interview, additional SQL queries were developed for Assignment 3 and documented in sql/03_analysis.sql.  
 
-# 7. Example Result – Applications by Educational Area
+
+# 7. SQL Query Implementation
+
+The screenshot below demonstrates the SQL query used to answer question 1a and 1b  from Assignment 1/Uppgift 1.
+
+![SQL Query Implementation](screenshots/sql_implementation)
+
+# 8. Example Result – Applications by Educational Area
 
 The screenshot below shows the result of question 1a, displaying the number of applications per educational area in descending order.
 
 ![Resultat från fråga 1a](screenshots/Exempel_fraga1a.png)
 
-# 8. AI Usage
+# 9. AI Usage
+
 An LLM was used as a learning aid for SQL explanations, debugging some syntax errors, and general guidance.
